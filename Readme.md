@@ -1,6 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Бондаренко](https://up.htmlacademy.ru/htmlcss/15/user/279207).
+* Студент: [Начинающий](https://up.htmlacademy.ru/htmlcss/15/user/279207).
 * Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/15/user/279207).
 
 ---
