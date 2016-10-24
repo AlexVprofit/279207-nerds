@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds: Нёрдс Каталог</title>
+    <base href="https://htmlacademy-htmlcss.github.io/279207-nerds/2/">
+</head>
+  <body>
+      <div class="main-header">
+          <!-- Header основной, Логотип и Навигация основная -->
+        <div class="container">
+          <a href="#" class="logo">
+              <img src="img/logo.png" width="100" height="20" alt="Logo nerds">
+          </a>
+          <nav class="main-navigation">
+              <ul>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Корзина</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="title-box">
+        <div class="container">
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- Сайдбар -->
+        <div class="sidebar-left">
+          <form action="#" method="post">
+            <h2 class="filter-title">Стоимость:</h2>
+            <!-- Фильтр по ценам -->
+            <div class="range-filter">
+              <div class="range-controls">Бегунок</div>
+              <!-- Фиксированный диапазон по ценам -->
+              <div class="range-price">
+                от <input class="from-price" type="text" value="0">
+                до <input class="to-price" type="text" value="15 000">
+              </div>
+              <h2 class="filter-title">Сетка:</h2>
+              <input type="radio" id="rbtn1" name="net" checked>
+              <label for="rb1">Адаптивная</label>
+              <input type="radio" id="rbtn2" name="net">
+              <label for="rb2">Фиксированная</label>
+              <input type="radio" id="rbtn3" name="net">
+              <label for="rb3">Резиновая</label>
+              <h2 class="filter-title">Особенности:</h2>
+              <input type="checkbox" id="ch1" name="slider" checked>
+              <label for="ch1">Слайдер</label>
+              <input type="checkbox" id="ch2" name="adv">
+              <label for="ch2">Блок преимуществ</label>
+              <input type="checkbox" id="ch3" name="news" checked>
+              <label for="ch3">Новости</label>
+              <input type="checkbox" id="ch4" name="gallery">
+              <label for="ch4">Галерея</label>
+              <input type="checkbox" id="ch5" name="cart">
+              <label for="ch5">Корзина</label>
+              <!-- Кнопка  без  input можно так ?-->
+              <p><button type="submit" name="button" class="btn-filter">Показать</button></p>
+            </div>
+          </form>
+        </div>
+        <!-- Слайды -->
+        <div class="main-catalog">
+          <!-- Строка сортировки -->
+          <div class="sorting">
+            <div class="sorting-title">Сортировать:</div>
+            <ul class="sorting-filter">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+              <li class="symbol">
+                <a href="#" class="symbol-cursor show"><b>Вверх</b></a>
+              </li>
+              <li class="symbol">
+                <a href="#" class="symbol-cursor"><b>Вниз</b></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Каталоги -->
+          <div class="catalog-box">
+
+            <!-- catalog 1 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="notice">
+                <h3>SEDONA</h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn-red">9 900 руб.</a>
+              </div>
+              <img src="img/img-1.jpg" alt="img-1" width="250" height="250">
+            </div>
+            <!-- catalog 2 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <img src="img/img-2.jpg" alt="img-2" width="250" height="250">
+            </div>
+            <!-- catalog 3 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <img src="img/img-3.jpg" alt="img-3" width="250" height="250">
+            </div>
+            <!-- catalog 4 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <img src="img/img-4.jpg" alt="img-4" width="250" height="250">
+            </div>
+            <!-- catalog 5 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <img src="img/img-5.jpg" alt="img-5" width="250" height="250">
+            </div>
+            <!-- catalog 6 -->
+            <div class="catalog-box-item">
+              <!-- Верхний серый блок -->
+              <div class="up-img">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <img src="img/img-6.jpg" alt="img-6" width="250" height="250">
+            </div>
+            <!-- Выбор вариантов -->
+            <ul class="option">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!-- Карта -->
+        <div class="map-box"> Как отобразить карту ? и логотип Нёрдс по адресу ?
+          <div class="container">
+            <!-- Блок на карте с реквизитами -->
+            <div class="address-block">
+              <h3 class="firm-title">NЁRDS DESIGN STUDIO</h3>
+              <div class="address">
+                191186,Санкт-Петербург, ул. Б.Конюшенная,д. 19/8
+              </div>
+              <div class="tel">тел. +7 (812) 275-75-75</div>
+              <a href="#" class="btn red">Напишите нам</a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="main-footer container">
+          <div class="social-block">
+            <a href="#" class="social-btn-vk">vk</a>
+            <a href="#" class="social-btn-fb">fb</a>
+            <a href="#" class="social-btn-d">Что это ???</a>
+          </div>
+          <div class="call-box">
+            <p class="call">Давайте дружить, это выгодно!</p>
+            <p class="rebate">Скидка 10% для друзей из соцальных сетей.</p>
+          </div>
+        </footer>
+      </div>
+  </body>
+</html>
