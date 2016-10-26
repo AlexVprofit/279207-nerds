@@ -8,29 +8,54 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <div class="main-header">
+      <div class="header">
           <!-- Header основной, Логотип и Навигация основная -->
-        <div class="container">
-          <div class="logo">
-              <img src="img/logo.png" width="100" height="20" alt="Logo nerds">
-          </div>
-          <nav class="main-navigation">
-              <ul>
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Корзина</a></li>
-              </ul>
-          </nav>
+          <div class="container">
+              <div class="logo">
+                  <img src="img/logo.png" width="100" height="20" alt="Logo nerds">
+              </div>
+              <nav class="main-navigation">
+                  <ul>
+                      <li><a href="#">Студия</a></li>
+                      <li><a href="#">Клиенты</a></li>
+                      <li><a href="#">Магазин</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Корзина</a></li>
+                  </ul>
+              </nav>
+            </div>
+            <div class="slider">
+                <!-- Slider слева -->
+                <div class="container">
+                    <img src="img/slider-1.jpg" alt="slider-1" width="760" height="431">
+                </div>
+
+                <div class="slider-block">
+
+                    <!--  кнопки на слайдере -->
+                    <input type="radio" id="rb1" name="toggle" checked>
+                    <input type="radio" id="rb2" name="toggle">
+                    <input type="radio" id="rb3" name="toggle">
+
+                    <!-- Slider-controls -->
+                    <div class="slider-controls">
+                        <label for="rb1"></label>
+                        <label for="rb2"></label>
+                        <label for="rb3"></label>
+                    </div>
+                    <!-- Справа от Slider -->
+                    <div class="slides">
+                        <!-- 1-й слайд  верояно будут еще-->
+                        <div class="slide slide-first">
+                            <h2 class="slide_title">Долго, дорого, скурпулезно.</h2>
+                            <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+                            <a href="#" class="btn btn-red">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container">
-            <h2 class="title">Долго, дорого, скурпулезно.</h2>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="btn">Узнать больше</a>
-      </div>
-      <!-- Картинка справа на макете это что? фон? просто изображение?-->
+
       <div class="container">
         <div class="promo-catalog">
           <div class="promo-catalog-item">
@@ -52,37 +77,41 @@
             <a href="#" class="btn btn-red">Заказать</a>
           </div>
         </div>
-        <article class="presentation">
-            <div class="side-left">
-                <h1 class="presentation-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
+
+        <div class="side-left">
+            <article class="presentation">
+                <div class="side-left">
+                    <h1 class="presentation-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
+                </div>
+                <div class="side-right">
+                    <img src="img/logo-color.jpg" alt="logo NЁRDS color" width="250" height="100">
+                </div>
+            </article>
+            <!-- Теперь, что и как умеем -->
+            <div class="info">
+                <div class="side-left">
+                    <h3 class="info-title">Выполняем заказы на разработку:</h3>
+                    <ul class="marker">
+                        <li>Веб-сайтов любой сложности</li>
+                        <li>Мобильных приложений для IOS и Android</li>
+                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
             </div>
             <div class="side-right">
-                <img src="img/logo-color.jpg" alt="logo NЁRDS color" width="250" height="100">
+                <h3 class="info-title">С 2004 года любим точность во всём:</h3>
+                <div class="rate">
+                    <!-- b использовал, чтобы в CSS приподнять % может что-то лучше есть, другой тег? -->
+                    <div class="rate-num">146<sup><small>%</small></sup></div>
+                    <div>
+                    class="rate-num">100<sup><small>%</small></sup></div>
+                    <div class="rate-num">50<sup><small>%</small></sup></div>
+                    <div class="rate-box">Уровень самоотдачи</div>
+                    <div class="rate-box">Соблюдение сроков</div>
+                    <div class="rate-box">Минимальная предоплата</div>
+                </div>
             </div>
-        </article>
-        <!-- Теперь, что и как умеем -->
-        <div class="info">
-          <div class="side-left">
-            <h3 class="info-title">Выполняем заказы на разработку:</h3>
-            <ul class="marker">
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для IOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </div>
-          <div class="side-right">
-            <h3 class="info-title">С 2004 года любим точность во всём:</h3>
-            <div class="rate">
-                <!-- b использовал, чтобы в CSS приподнять % может что-то лучше есть, другой тег? -->
-                <div class="rate-num">146<b class="index">%</b></div>
-                <div class="rate-num">100<b class="index">%</b></div>
-                <div class="rate-num">50<b class="index">%</b></div>
-                <div class="rate-box">Уровень самоотдачи</div>
-                <div class="rate-box">Соблюдение сроков</div>
-                <div class="rate-box">Минимальная предоплата</div>
-            </div>
-          </div>
         </div>
         <!-- Логотипы -->
         <div class="partners">
@@ -128,6 +157,6 @@
       </div>
 
       <!-- Какой-то скрипт
-      <script> </script>-->
+      <script src="scripts.js"> </script>-->
   </body>
 </html>
