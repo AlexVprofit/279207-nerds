@@ -9,7 +9,7 @@
   </head>
   <body>
       <div class="header">
-          <!-- Header основной, Логотип и Навигация основная -->
+          <!-- Header основной, Логотип и Навигация основная корзина -->
         <div class="container">
               <img src="img/logo.png" width="160" height="65" alt="Logo nerds">
           <nav class="main-navigation">
@@ -17,11 +17,15 @@
                 <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li><a href="#">Магазин</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="img/cart-icon.png"><img src="img/cart-icon.png" alt="Cart" width="15" height="15">Корзина</a>
-                </li>
                 <li><a href="#">Контакты</a></li>
               </ul>
+              <div class="basket-block">
+                  <a href="#" class="basket-img">
+                      <!--Иконка корзины будет задана с помощью фона пока так чтобы не забыть -->
+                      <!-- <img src="img/cart-icon.png" alt="Cart" width="15" height="15"> -->
+                      Корзина
+                  </a>
+              </div>
           </nav>
         </div>
         <h1>Магазин готовых шаблонов</h1>
@@ -159,39 +163,37 @@
           </div>
         </div>
       </div>
-        <!-- Карта -->
-        <div class="map-box">
-          <div class="container">
-            <!-- Блок на карте с реквизитами -->
-            <img src="img/map.jpg" alt="Map" width="1440" height="416">
-            <!-- Marker -->
-            <img src="img/map-marker.png" alt="Map" width="231" height="190">
-            <div class="address-block">
-              <h3 class="firm-title">NЁRDS DESIGN STUDIO</h3>
-              <div class="address">
-                191186,Санкт-Петербург, ул. Б.Конюшенная,д. 19/8
-              </div>
-              <div class="tel">тел. +7 (812) 275-75-75</div>
-              <a href="#" class="btn red">Напишите нам</a>
-            </div>
-          </div>
-        </div>
+
         <!-- Footer -->
         <footer class="main-footer container">
-          <div class="social-block">
-              <a href="img/vk-icon.png" class="social-btn-vk"><img src="img/vk-icon.png" alt="VK" width="26" height="15">
-              </a>
-              <a href="img/fb-icon.png" class="social-btn-fb"><img src="img/fb-icon.png" alt="FB" width="12" height="22">
-              </a>
-              <a href="img/insta-icon.png" class="social-btn-insta"><img src="img/insta-icon.png" alt="Insta" width="21" height="21">
-              </a>
-          </div>
-          <div class="call-box">
-            <p class="call">Давайте дружить, это выгодно!</p>
-            <p class="rebate">Скидка 10% для друзей из соцальных сетей.</p>
-          </div>
+            <!--Подвал Карта проезда-->
+            <div class="footer-map">
+              <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+              <div class="map-marker">
+                <img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
+              </div>
+              <article class="contacts">
+                <h2>NЁRDS DESIGN STUDIO</h2>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <button class="btn btn-write-us">Напишите нам</button>
+              </article>
+            </div>
+          <!--Подвал  Социальные сети-->
+            <section class="footer-social">
+            <h1>Давайте дружить, это выгодно!</h1>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="container">
+              <!--Изображение будет  фон в CSS url("img/vk-icon.png")-->
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <!--Изображение будет фон в CSS url("img/fb-icon.png")-->
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <!--Изображение будет фон в CSS url("img/insta-icon.png")-->
+              <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+            </div>
+          </section>
         </footer>
-      </div>
-
+        <!-- Какой-то скрипт
+        <script src="scripts.js"> </script>-->
   </body>
 </html>
