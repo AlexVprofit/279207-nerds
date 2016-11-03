@@ -1,171 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Nerds: Нёрдс</title>
-    <!--Подключение стилей-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="header">
-          <!-- Header основной, Логотип и Навигация основная корзина-->
-          <div class="container">
-              <div class="logo">
-                  <img src="img/logo.png" width="160" height="65" alt="Logo nerds">
+	<head>
+		<meta charset="utf-8">
+		<title>Nerds: Нёрдс</title>
+		<!--Подключение стилей-->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<!-- Header основной, Логотип и Навигация основная корзина слайдер---->
+       <div class="container main-header">
+       <div class="header-container clearfix">
+<!-- 				<nav class="main-navigation"> -->
+          <div class="logo">
+						<a href="#"><img src="img/logo.png" width="160" height="65" alt="Logo nerds"></a>
+					</div>
+          <ul class="main-header-menu">
+            <!-- <li><a class="logo" href="#"><img src="img/logo.png" width="160" height="65" alt="Logo nerds"></a></li> -->
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+ 				<!-- </nav> -->
+         <div class="basket-block">
+            <a href="#" class="basket-img"><img src="img/cart-icon.png" alt="Cart" width="15" height="15">Корзина
+            </a>
+         </div>
+       </div>
+       </div>
+								<!-- Slider слева -->
+               <!-- кнопки на слайдере -->
+						<div class="container clearfix">
+							<div class="slider">
+<!--               <input type="radio" id="rb1" name="toggle" value="btn-rb1" checked>
+              <input type="radio" id="rb2" name="toggle" value="btn-rb2">
+              <input type="radio" id="rb3" name="toggle" value="btn-rb3">
+              <div class="slider-controls">
+                <label for="rb1"></label>
+                <label for="rb2"></label>
+                <label for="rb3"></label>
               </div>
-              <nav class="main-navigation">
-                  <ul>
-                      <li><a href="#">Студия</a></li>
-                      <li><a href="#">Клиенты</a></li>
-                      <li><a href="#">Магазин</a></li>
-                      <li><a href="#">Контакты</a></li>
-                  </ul>
-                  <div class="basket-block">
-                      <a href="#" class="basket-img">
-                          <!--Иконка корзины будет задана с помощью фона пока так чтобы не забыть -->
-                          <!-- <img src="img/cart-icon.png" alt="Cart" width="15" height="15"> -->
-                          Корзина
-                      </a>
-                  </div>
-              </nav>
-            </div>
-            <div class="slider">
-                <!-- Slider слева -->
-                <div class="container">
-                    <img src="img/slider-1.png" alt="slider-1" width="760" height="434">
-                </div>
+ -->
+              <div class="slider-right">
+                <img src="img/slider-1.png" alt="slider-1" width="760" height="434">
+              </div>
 
-                <div class="slider-block">
-
-                    <!--  кнопки на слайдере -->
-                    <input type="radio" id="rb1" name="toggle" checked>
-                    <input type="radio" id="rb2" name="toggle">
-                    <input type="radio" id="rb3" name="toggle">
-
-                    <!-- Slider-controls -->
-                    <div class="slider-controls">
-                        <label for="rb1"></label>
-                        <label for="rb2"></label>
-                        <label for="rb3"></label>
+								<!-- Справа от Slider -->
+								<div class="slider-left">
+									<div class="slides">
+                    <div class="slider-text">
+                      <span class="slider-h1">Долго, дорого,<br> скрупулезно</span>
+                      <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                      <a class="btn" href="#">Узнать больше</a>
                     </div>
-                    <!-- Справа от Slider -->
-                    <div class="slides">
-                        <!-- 1-й слайд  верояно будут еще-->
-                        <div class="slide slide-first">
-                            <h2 class="slide_title">Долго, дорого, скурпулезно.</h2>
-                            <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-                            <a href="#" class="btn btn-red">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <main>
-      <div class="container">
-        <div class="promo-catalog">
-        <!--Веб-сайты-->
-          <div class="promo-catalog-item">
-            <img src="img/illustration-1.jpg" alt="promosoft-1" width="300" height="146">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="btn btn-red">Заказать</a>
-          </div>
-          <div class="promo-catalog-item">
-            <img src="img/illustration-2.jpg" alt="promosoft-2" width="300" height="146">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="btn btn-green">Заказать</a>
-          </div>
-          <div class="promo-catalog-item">
-            <img src="img/illustration-3.jpg" alt="promosoft-3" width="300" height="146">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="btn btn-red">Заказать</a>
-          </div>
-        </div>
+										</div>
+								</div>
+							</div>
+						</div>
+    </header>
+		<main>
+			<div class="container">
+				<!--Веб-сайты -->
+				<div class="promo-catalog clearfix">
+					<div class="promo-catalog-item">
+						<img src="img/illustration-1.jpg" alt="promosoft-1" width="300" height="146">
+						<h2>Веб-сайты</h2>
+						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<a href="#" class="btn btn-red">Заказать</a>
+					</div>
+					<div class="promo-catalog-item">
+						<img src="img/illustration-2.jpg" alt="promosoft-2" width="300" height="146">
+						<h2>Приложения</h2>
+						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+						<a href="#" class="btn btn-green">Заказать</a>
+					</div>
+					<div class="promo-catalog-item">
+						<img src="img/illustration-3.jpg" alt="promosoft-3" width="300" height="146">
+						<h2>Презентации</h2>
+						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+						<a href="#" class="btn btn-red">Заказать</a>
+					</div>
+				</div>
 
-        <div class="side-left">
-            <article class="presentation">
-                <div class="side-left">
-                    <h2 class="presentation-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
-                </div>
-                <div class="side-right">
-                    <img src="img/nerds-illustration.jpg" alt="logo NЁRDS color" width="360" height="208">
-                </div>
-            </article>
-            <!-- Теперь, что и как умеем -->
-            <div class="info">
-                <div class="side-left">
+				<div class="content">
+          <div class="content-container content-presentation">
+                <h2 class="presentation-title">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+          </div>
+            <div class="clearfix">
+                <div class="content-info-left">
                     <h3 class="info-title">Выполняем заказы на разработку:</h3>
-                    <ul class="marker">
+                    <ul class="content-marker">
                         <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для IOS и Android</li>
+                        <li>Мобильных приложений для iOS и Android</li>
                         <li>Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </div>
-            </div>
-            <div class="side-right">
-                <h3 class="info-title">С 2004 года любим точность во всём:</h3>
-                <div class="rate">
-                    <div class="rate-num">146<sup><small>%</small></sup></div>
-                    <div
-                    class="rate-num">100<sup><small>%</small></sup></div>
-                    <div class="rate-num">50<sup><small>%</small></sup></div>
-                    <div class="rate-box">Уровень самоотдачи</div>
-                    <div class="rate-box">Соблюдение сроков</div>
-                    <div class="rate-box">Минимальная предоплата</div>
+                <div class="content-info-right">
+                    <h3 class="info-title">С 2004 года любим точность во всём:</h3>
+<!-- 								<div class="rate">
+										<div class="rate-num">146<sup><small>%</small></sup></div>
+										<div
+										class="rate-num">100<sup><small>%</small></sup></div>
+										<div class="rate-num">50<sup><small>%</small></sup></div>
+										<div class="rate-box">Уровень самоотдачи</div>
+										<div class="rate-box">Соблюдение сроков</div>
+										<div class="rate-box">Минимальная предоплата</div>
+								</div>
+ -->
                 </div>
             </div>
+         </div>
+				<!-- Логотипы -->
+				<div class="partners clearfix">
+					<div class="partners-item">
+						<img src="img/logo-1.png" alt="htmlAcademy" width="199" height="68">
+					</div>
+					<div class="partners-item">
+						<img src="img/logo-2.png" alt="Borodinsky" width="209" height="90">
+					</div>
+					<div class="partners-item">
+						<img src="img/logo-3.png" alt="Pink" width="185" height="52">
+					</div>
+					<div class="partners-item">
+						<img src="img/logo-4.png" alt="Mishka" width="173" height="84">
+					</div>
+				</div>
+			</div>
+		</main>
+						<!--Карта                   КАК РАСТЯНУТЬ КАРТУ ???      -->
+    <div class="map">
+      <div class="container clearfix">
+        <div class="map-addr">
+          <p class="map-addr-title">NЁRDS DESIGN STUDIO</p>
+          <p class="map-addr-text">191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-addr-text">тел. +7 (812) 275-75-75</p>
+          <a class="btn map-addr-btn" href="#">Напишите нам</a>
         </div>
-        <!-- Логотипы -->
-        <div class="partners">
-          <div class="partners-item">
-            <img src="img/logo-1.png" alt="htmlAcademy" width="199" height="68">
-          </div>
-          <div class="partners-item">
-            <img src="img/logo-2.png" alt="Borodinsky" width="209" height="90">
-          </div>
-          <div class="partners-item">
-            <img src="img/logo-3.png" alt="Pink" width="185" height="52">
-          </div>
-          <div class="partners-item">
-            <img src="img/logo-4.png" alt="Mishka" width="173" height="84">
-          </div>
-        </div>
+      <div class="map-marker">
+        <img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
       </div>
-    </main>
-        <!-- Footer -->
-        <footer class="main-footer container">
-            <!--Подвал Карта проезда-->
-            <div class="footer-map">
-              <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-              <div class="map-marker">
-                <img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
-              </div>
-              <article class="contacts">
-                <h2>NЁRDS DESIGN STUDIO</h2>
-                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <button class="btn btn-write-us">Напишите нам</button>
-              </article>
-            </div>
-          <!--Подвал  Социальные сети-->
-            <section class="footer-social">
-            <h1>Давайте дружить, это выгодно!</h1>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-            <div class="container">
-              <!--Изображение будет  фон в CSS url("img/vk-icon.png")-->
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-              <!--Изображение будет фон в CSS url("img/fb-icon.png")-->
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <!--Изображение будет фон в CSS url("img/insta-icon.png")-->
-              <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-            </div>
-          </section>
-        </footer>
-      <!-- Какой-то скрипт
-      <script src="scripts.js"> </script>-->
-  </body>
+      </div>
+    </div>
+					<!--Подвал  Социальные сети-->
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-social">
+          <!--Изображение будет  фон в CSS url("img/vk-icon.png")-->
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <!--Изображение будет фон в CSS url("img/fb-icon.png")-->
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <!--Изображение будет фон в CSS url("img/insta-icon.png")-->
+          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-text">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+       </section>
+      </div>
+    </footer>
+			<!-- Какой-то скрипт
+			<script src="scripts.js"> </script>-->
+	</body>
 </html>
