@@ -1,6 +1,6 @@
-html,body{
-    margin:0;
-    padding:0;
+html,body, ul {
+  margin:0;
+  padding:0;
 }
 body {
   /* width: 1440px; */
@@ -9,34 +9,25 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 300;
+  background-color: white;
+  color:black;
+}
 
-    background-color: white;
-    /* line-height: 24px; */
-    color:black;
+ul {
+  padding: 0px;
+  list-style: none;
 }
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
 
-.header{
-    font-weight: 600;
-    margin-bottom: 60px;
-    padding-top: 50px;
-    background: #eeeeee;
-    color: #000000;
-
-}
-
-
-.main-header {
-  font-size: 16px;
-  font-weight: bold;
-
-  background: aquamarine;
+.header {
+	padding-top: 50px;
+	margin-bottom: 80px;
+	background: #eeeeee;
 }
 
 .container {
@@ -45,56 +36,310 @@ body {
   padding: 0 20px;
 }
 
-.header-container {
-  min-height: 65px;
-}
-
 .logo {
   float: left;
   width: 160px;
   height: 65px;
 
-  background: lightgreen;
+  /* background: lightgreen; */
  }
 
-.main-header-menu {
-	float: left;
+.main-navigation  {
+	float: right;
 	width: 840px;
-   min-height: 65px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  min-height: 65px;
+	margin-top: 32px;
+/* 	text-align: center;
 	text-transform: uppercase;
-
-  background: violet;
+ */
+  /* background: violet; */
 }
 
-.main-header-menu  li {
+.main-navigation ul {
+  font-size: 0;
+}
+
+.main-navigation  li  {
  	display: inline-block;
   vertical-align: middle;
 }
 
-.main-header-menu a {
-    display: block;
-    padding: 0 20px;
-    padding-top: 20px;
-    text-decoration: none;
+.main-navigation  li:nth-child(1),
+.main-navigation  li:nth-child(2),
+.main-navigation  li:nth-child(3) {
+  margin-right: 50px;
+}
+
+.main-navigation  li:nth-child(4) {
+  margin-right: 245px;
+}
+
+.main-navigation a  {
+  display: block;
+	font-size: 16px;
+	line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+ 	text-transform: uppercase;
 }
 
 
-.basket-img {
+.basket-img  {
  	display: block;
   text-decoration: none;
  	text-transform: uppercase;
 }
 
-.basket-block {
-  float: right;
-  width: 160px;
-
-  background: orchid;
+.main-navigation .basket  {
+	position: relative;
+	margin-right: 0;
+	margin-left: 5px;
 }
+
+.basket  i {
+	position: absolute;
+	left: -30px;
+	bottom: 10px;
+	width: 15px;
+	height: 15px;
+	background: #c1c1c1 url(../img/cart-icon.png) -30px -30px no-repeat;
+}
+/*  Для Catalog */
+
+.header-title {
+  width: 760px;
+  height: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+    /* background: lightgreen; */
+}
+
+/*shop-columns - сетка колонок*/
+
+/* для левой колонки*/
+.shop-columns .shop-column-left {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.range-price input {
+  width: 80px;
+  margin-left: 12px;
+  /* padding: 10px 15px; */
+  border: none;
+  border-radius: 3px;
+  background: #f1f1f1;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.range-price .min-price {
+  margin-right: 32px;
+}
+.range-price {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.shop-column-left input[type="submit"]{
+  margin-top: 48px;
+  padding: 10px 82px;
+  border: none;
+  border-radius: 3px;
+  background: #f1f1f1;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.shop-column-left input[type="radio"] + label, .shop-column-left input[type="checkbox"] + label {
+	/* position: relative; */
+/* 	display: inline-block;
+	vertical-align: top; */
+	margin-bottom: 18px;
+/* 	padding-left: 35px; */
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+
+/*для правой колонки*/
+.shop-columns .shop-column-right {
+  float: left;
+  width: 760px;
+}
+.shop-column-right .sort {
+  margin-bottom: 60px;
+}
+
+.sort li {
+  display: inline-block;
+/* 	color: #cccccc; */
+	font-size: 14px;
+	line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.sort li:nth-child(1) {
+  margin-right: 258px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.sort li:nth-child(2) a {
+  margin-right: 20px;
+  color: #000000;
+}
+
+.sort li:nth-child(3) {
+  margin-right: 21px;
+}
+
+.sort li:nth-child(4) {
+  margin-right: 38px;
+}
+
+.sort li:nth-child(5) {
+  margin-right: 10px;
+}
+
+.sort li:nth-child(6) {
+  margin-right: 0;
+}
+
+/*Сетка и  каталог*/
+.catalog {
+  width: 760px;
+  margin-bottom: 60px;
+  font-size: 0;
+}
+
+.catalog .catalog-item  {
+	position: relative;
+	display: inline-block;
+	width: 360px;
+	min-height: 576px;
+	margin-right: 40px;
+	margin-bottom: 36px;
+	border-top: 40px solid #f1f1f1;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+  font-size: 16px;
+	line-height: 18px;
+}
+
+.catalog-item .item-controls  {
+	position: absolute;
+	top: -22px;
+	left: 13px;
+}
+
+.catalog .catalog-item:nth-child(1) {
+  background: #c1c1c1 url("../img/img-sedona.jpg");
+}
+.catalog .catalog-item:nth-child(2) {
+  background: #c1c1c1 url("../img/img-pink.jpg");
+}
+.catalog .catalog-item:nth-child(3) {
+  background: #c1c1c1 url("../img/img-barbershop.jpg");
+}
+.catalog .catalog-item:nth-child(4){
+  background: #c1c1c1 url("../img/img-mishka.jpg");
+}
+.catalog .catalog-item:nth-child(5) {
+  background: #c1c1c1 url("../img/img-aplus.jpg");
+}
+.catalog .catalog-item:nth-child(6) {
+  background: #c1c1c1 url("../img/img-kvast.jpg");
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.shop-column-right .paginator  {
+	font-size: 0;
+}
+
+.paginator li {
+	display: inline-block;
+	margin-right: 11px;
+}
+
+.paginator a {
+  display: block;
+  padding: 18px 20px;
+  border-radius: 3px;
+  background: #f1f1f1;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.paginator .next {
+  padding: 18px 78px;
+}
+
+.paginator .active a {
+  background: #ffffff;
+  border: 3px solid #f1f1f1;
+}
+
+.catalog-item .catalog-notice  {
+  position: absolute;
+	bottom: 0px;
+	/* left: 50%; */
+	/* width: 360px; */
+	height: 230px;
+	/* margin-top: 338px; */
+	/* margin-left: -100px; */
+	/* padding: 30px; */
+	background: #eeeeee;
+}
+
+.catalog-notice h2  {
+	margin-top: 35px;
+	/* margin-bottom: 28px; */
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	text-align: center;
+}
+
+.catalog-notice p {
+	/* margin-bottom: 34px; */
+  padding: 0 90px;
+  color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.catalog-notice .item-price {
+	width: 200px;
+  /* height: 50px; */
+	margin: 0 auto;
+	margin-left: 80px;
+  border: none;
+}
+
+
+
+
 
 .slider  {
 	height: 430px;
@@ -130,18 +375,33 @@ body {
 }
 
 .btn {
-	display: block;
-	width: 240px;
+	/* width: 240px; */
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
-	padding: 20px;
+	padding: 18px 50px;
 	background: #fb565a;
   color:#ffffff;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 3px;
+}
+
+.promo-catalog-item  .btn {
+	padding: 18px 40px;
+}
+
+.promo-catalog-item:nth-child(2) .btn {
+	background: #00ca74;
+}
+
+.promo-catalog-item:nth-child(3) .btn {
+	background: #efc84a;
+}
+
+.map .btn  {
+	padding: 10px 50px;
 }
 
 .promo-catalog {
@@ -155,7 +415,7 @@ body {
   margin-right: 100px;
 
   min-height: 340px;
-  background: aquamarine;
+ /*  background: aquamarine; */
 }
 
 .promo-catalog-item:last-child {
@@ -170,11 +430,13 @@ body {
 .content-container {
 
   min-height: 260px;
-  background: aquamarine;
+  /* background: aquamarine; */
 }
 
 .content-presentation {
-	padding: 45px 320px 30px 0;
+	padding-top: 45px;
+  padding-bottom: 30px;
+  padding-right: 320px;
 	background: url(../img/nerds-illustration.jpg) no-repeat 100% 45%;
 }
 
@@ -216,21 +478,30 @@ body {
 
 .map {
 	height: 416px;
+	/* background: url(../img/map.jpg) center no-repeat 50% 0; */
 	background: url(../img/map.jpg) no-repeat 50% 0;
+
 }
 
 .map-addr {
 	float: left;
-	width: 318px;
+/* 	width: 318px; */
+  margin-top: 55px;
 	padding-top: 57px;
 	padding-bottom: 47px;
 	padding-left: 50px;
 	padding-right: 50px;
-	background: #fffffff;  /* Почему фон не залился, как исправить  ???????????????? */
+	background: #ffffff;  /* Почему фон не залился, как исправить  ???????????????? */
 }
 
 .map-addr-btn {
 	width: 218px;
+}
+
+.map-marker  {
+	float: right;
+  margin-right: 248px;
+	padding-top: 88px;
 }
 
 
