@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds: Нёрдс Каталог</title>
-    <!-- Подключение стилей-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header class="header">
 			<!-- Header основной, Логотип и Навигация основная корзина слайдер---->
-       <div class="container">
-       <div class="clearfix">
+      <header class="main-header">
+       <div class="container clearfix">
           <div class="logo">
-						<a href="#"><img src="img/logo.png" width="160" height="65" alt="Logo nerds"></a>
+						<a class="logo-status" href="#"></a>
+						<!-- <a class="logo" href="#"></a> -->
 					</div>
         <nav class="main-navigation">
           <ul>
@@ -21,16 +21,11 @@
             <li><a href="#">Клиенты</a></li>
             <li><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
-            <li class="basket"><a href="#"><i></i>Корзина</a></li>
+            <li class="basket"><i></i><a href="#">Корзина</a></li>
           </ul>
         </nav>
-<!--          <div class="basket-block">
-            <a href="#" class="basket-img"><img src="img/cart-icon.png" alt="Cart" width="15" height="15">Корзина
-            </a>
-         </div> -->
        </div>
-          <h1 class="header-title">Магазин готовых шаблонов</h1>
-       </div>
+         <h1 class="header-title">Магазин готовых шаблонов</h1>
     </header>
 
     <div class="container">
@@ -38,34 +33,44 @@
         <!-- Сайдбар -->
         <div class="shop-column-left">
           <form action="#" method="get">
-            <h3>Стоимость:</h3>
+            <h2 class="filter-title">Стоимость:</h2>
             <div class="shop-filter">
-              <div class="filter-controls">Бегунок</div>
+              <div class="filter-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 10%; width: 60%"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
               <!-- Фиксированный диапазон по ценам -->
               <div class="range-price">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="15 000">
+                <label class="min-price">от <input class="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input class="max-price" type="text" value="15 000"></label>
               </div>
             </div>
-            <h3>Сетка:</h3>
+            <div class="grid">
+              <h2 class="filter-title">Сетка:</h2>
+            </div>
             <input type="radio" name="net" id="adaptive-id" checked>
-            <label for="adaptive-id">Адаптивная<br></label>
+            <label for="adaptive-id">Адаптивная</label>
             <input type="radio" name="net" id="fixed-id">
-            <label for="fixed-id">Фиксированная<br></label>
+            <label for="fixed-id">Фиксированная</label>
             <input type="radio" name="net" id="rubber-id">
-            <label for="rubber-id">Резиновая<br></label>
-            <h3>Особенности:</h3>
+            <label for="rubber-id">Резиновая</label>
+            <div class="hang">
+              <h2 class="filter-title">Особенности:</h2>
+            </div>
             <input type="checkbox" name="slider" id="slider-id" checked>
-            <label for="slider-id">Слайдер<br></label>
+            <label for="slider-id">Слайдер</label>
             <input type="checkbox" name="block-features" id="block-features-id">
-            <label for="block-features-id">Блок преимуществ<br></label>
+            <label for="block-features-id">Блок преимуществ</label>
             <input type="checkbox" name="news" id="news-id" checked>
-            <label for="news-id">Новости<br></label>
+            <label for="news-id">Новости</label>
             <input type="checkbox" name="gallery" id="gallery-id">
-            <label for="gallery-id">Галерея<br></label>
+            <label for="gallery-id">Галерея</label>
             <input type="checkbox" name="basket" id="basket-id">
-            <label for="basket-id">Корзина<br></label>
-            <input type="submit" name="button" value="Показать">
+            <label for="basket-id">Корзина</label>
+            <input class="btn btn-show" type="submit" name="button" value="Показать">
           </form>
         </div>
         <div class="shop-column-right">
@@ -75,20 +80,21 @@
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
-            <li><a href="#"> U </a></li>
-            <li><a href="#"> D </a></li>
+            <li><a class="dir dir-up" href="#"></a></li>
+            <li><a class="dir dir-down" href="#"></a></li>
           </ul>
           <!-- Слайды -->
           <div class="catalog">
             <article class="catalog-item">
-              <div class="item-controls">
-                <button type="button"></button>
-                <button type="button"></button>
-                <button type="button"></button>
-              </div>
+                <div class="item-controls">
+                  <button type="button"></button>
+                  <button type="button"></button>
+                  <button type="button"></button>
+                </div>
+              <div class="item-image"></div>        <!--  ПРОБЫВАЛ ОБЕРНУТЬ ЧТОБЫ  ТОЛЬКО КАРТИНКУ ОБВЕСТИ НЕ ПОЛУЧАЕТСЯ -->
               <div class="catalog-notice">
                 <h2>SEDONA</h2>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br> для туристов</p>
                 <button class="item-price btn" type="button">9 900 руб.</button>
               </div>
             </article>
@@ -98,12 +104,22 @@
                 <button type="button"></button>
                 <button type="button"></button>
               </div>
-             </article>
+              <div class="catalog-notice">
+                <h2>Pink App</h2>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <button class="item-price btn" type="button">9 900 руб.</button>
+              </div>
+            </article>
             <article class="catalog-item">
-              <div class="item-controls">
+             <div class="item-controls">
                 <button type="button"></button>
                 <button type="button"></button>
                 <button type="button"></button>
+              </div>
+              <div class="catalog-notice">
+                <h2>Barbershop</h2>
+                <p>Сайт салоны красоты.<br>  Для мужчин, да.</p>
+                <button class="item-price btn" type="button">9 900 руб.</button>
               </div>
             </article>
             <article class="catalog-item">
@@ -112,12 +128,10 @@
                 <button type="button"></button>
                 <button type="button"></button>
               </div>
-            </article>
-            <article class="catalog-item">
-              <div class="item-controls">
-                <button type="button"></button>
-                <button type="button"></button>
-                <button type="button"></button>
+              <div class="catalog-notice">
+                <h2>MISHKA</h2>
+                <p>Интернет-магазин<br>  вязаных игрушек</p>
+                <button class="item-price btn" type="button">9 900 руб.</button>
               </div>
             </article>
             <article class="catalog-item">
@@ -126,8 +140,25 @@
                 <button type="button"></button>
                 <button type="button"></button>
               </div>
+              <div class="catalog-notice">
+                <h2>A Plus</h2>
+                <p>Лендинг курсов повышения<br> квалификации</p>
+                <button class="item-price btn" type="button">9 900 руб.</button>
+              </div>
             </article>
-                <!-- Выбор вариантов -->
+            <article class="catalog-item">
+              <div class="item-controls">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+              <div class="catalog-notice">
+                <h2>КВАСТ</h2>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <button class="item-price btn" type="button">9 900 руб.</button>
+              </div>
+            </article>
+           <!-- Выбор вариантов -->
             <ul class="paginator">
               <li class="active"><a href="">1</a></li>
               <li><a href="#">2</a></li>
@@ -139,36 +170,33 @@
        </div>
      </div>
 
-						<!--Карта         НА МАКЕТЕ ВО ВСЮ ДЛИННУ ???          КАК РАСТЯНУТЬ КАРТУ ???      -->
+			<!--Карта         НА МАКЕТЕ ВО ВСЮ ДЛИННУ ???          КАК РАСТЯНУТЬ КАРТУ ???      -->
     <div class="map">
       <div class="container clearfix">
         <div class="map-addr">
-          <p class="map-addr-title">NЁRDS DESIGN STUDIO</p>
-          <p class="map-addr-text">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p class="map-addr-text">тел. +7 (812) 275-75-75</p>
-          <a class="btn map-addr-btn" href="#">Напишите нам</a>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-pop-up" href="#">Напишите нам</a>
         </div>
       <div class="map-marker">
         <img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
       </div>
       </div>
     </div>
-					<!--Подвал  Социальные сети-->
+
+     <!--Подвал  Социальные сети-->
     <footer class="main-footer">
       <div class="container clearfix">
-        <section class="footer-social">
-          <!--Изображение будет  фон в CSS url("img/vk-icon.png")-->
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <!--Изображение будет фон в CSS url("img/fb-icon.png")-->
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <!--Изображение будет фон в CSS url("img/insta-icon.png")-->
-          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-text">
-          <p>Давайте дружить, это выгодно!</p>
+        <div class="social-block">
+         <a class="social-btn social-btn-vk" href="#"></a>
+         <a class="social-btn social-btn-fb" href="#"></a>
+         <a class="social-btn social-btn-insta" href="#"></a>
+        </div>
+        <div class="promo-block">
+          <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
-       </section>
+        </div>
       </div>
     </footer>
 			<!-- Какой-то скрипт

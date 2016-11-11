@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Nerds: Нёрдс</title>
-		<!--Подключение стилей-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="header">
+		<header class="main-header">
 			<!-- Header основной, Логотип и Навигация основная корзина слайдер---->
-       <div class="container">
-       <div class="clearfix">
+       <div class="container clearfix">
           <div class="logo">
-						<a href="#"><img src="img/logo.png" width="160" height="65" alt="Logo nerds"></a>
+						<a class="logo-status" href="#"></a>
+						<!-- <a class="logo" href="#"></a> -->
 					</div>
         <nav class="main-navigation">
           <ul>
@@ -21,28 +21,23 @@
             <li><a href="#">Клиенты</a></li>
             <li><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
-            <li class="basket"><a href="#"><i></i>Корзина</a></li>
+            <li class="basket"><i></i><a href="#">Корзина</a></li>
           </ul>
         </nav>
-<!--          <div class="basket-block">
-            <a href="#" class="basket-img"><img src="img/cart-icon.png" alt="Cart" width="15" height="15">Корзина
-            </a>
-         </div> -->
-       </div>
        </div>
 								<!-- Slider слева -->
                <!-- кнопки на слайдере -->
 						<div class="container clearfix">
 							<div class="slider">
-<!--               <input type="radio" id="rb1" name="toggle" value="btn-rb1" checked>
-              <input type="radio" id="rb2" name="toggle" value="btn-rb2">
-              <input type="radio" id="rb3" name="toggle" value="btn-rb3">
-              <div class="slider-controls">
-                <label for="rb1"></label>
-                <label for="rb2"></label>
-                <label for="rb3"></label>
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-paginator">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
               </div>
- -->
+
               <div class="slider-right">
                 <img src="img/slider-1.png" alt="slider-1" width="760" height="434">
               </div>
@@ -51,9 +46,9 @@
 								<div class="slider-left">
 									<div class="slides">
                     <div class="slider-text">
-                      <span class="slider-h1">Долго, дорого,<br> скрупулезно</span>
+                      <span>Долго, дорого,<br>скрупулезно.</span>
                       <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                      <a class="btn" href="#">Узнать больше</a>
+                      <a class="btn-slider btn" href="#">Узнать больше</a>
                     </div>
 										</div>
 								</div>
@@ -63,106 +58,113 @@
 		<main>
 			<div class="container">
 				<!--Веб-сайты -->
-				<div class="promo-catalog clearfix">
-					<div class="promo-catalog-item">
-						<img src="img/illustration-1.jpg" alt="promosoft-1" width="300" height="146">
+				<div class="features-catalog clearfix">
+					<div class="features-catalog-item">
+						<img src="img/illustration-1.jpg" alt="features-soft-1" width="300" height="146">
 						<h2>Веб-сайты</h2>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						<a href="#" class="btn">Заказать</a>
 					</div>
-					<div class="promo-catalog-item">
-						<img src="img/illustration-2.jpg" alt="promosoft-2" width="300" height="146">
+					<div class="features-catalog-item">
+						<img src="img/illustration-2.jpg" alt="features-soft-2" width="300" height="146">
 						<h2>Приложения</h2>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a href="#" class="btn">Заказать</a>
 					</div>
-					<div class="promo-catalog-item">
-						<img src="img/illustration-3.jpg" alt="promosoft-3" width="300" height="146">
+					<div class="features-catalog-item">
+						<img src="img/illustration-3.jpg" alt="features-soft-3" width="300" height="146">
 						<h2>Презентации</h2>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a href="#" class="btn">Заказать</a>
 					</div>
 				</div>
 
-				<div class="content">
-          <div class="content-container content-presentation">
-                <h2 class="presentation-title">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h2>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
-          </div>
-            <div class="clearfix">
-                <div class="content-info-left">
-                    <h3 class="info-title">Выполняем заказы на разработку:</h3>
-                    <ul class="content-marker">
-                        <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOS и Android</li>
-                        <li>Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
-                </div>
-                <div class="content-info-right">
-                    <h3 class="info-title">С 2004 года любим точность во всём:</h3>
-<!-- 								<div class="rate">
-										<div class="rate-num">146<sup><small>%</small></sup></div>
-										<div
-										class="rate-num">100<sup><small>%</small></sup></div>
-										<div class="rate-num">50<sup><small>%</small></sup></div>
-										<div class="rate-box">Уровень самоотдачи</div>
-										<div class="rate-box">Соблюдение сроков</div>
-										<div class="rate-box">Минимальная предоплата</div>
-								</div>
- -->
-                </div>
-            </div>
-         </div>
-				<!-- Логотипы -->
-				<div class="partners clearfix">
-					<div class="partners-item">
-						<img src="img/logo-1.png" alt="htmlAcademy" width="199" height="68">
-					</div>
-					<div class="partners-item">
-						<img src="img/logo-2.png" alt="Borodinsky" width="209" height="90">
-					</div>
-					<div class="partners-item">
-						<img src="img/logo-3.png" alt="Pink" width="185" height="52">
-					</div>
-					<div class="partners-item">
-						<img src="img/logo-4.png" alt="Mishka" width="173" height="84">
-					</div>
-				</div>
-			</div>
+				<div class="content clearfix">
+
+            <section class="column-left">
+              <h2>Мы &mdash; маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
+              <p>Исповедуем принципы минимализма и чистоты. Ставим математический
+              расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+              <div class="perform">
+                <h3>Выполняем заказы на разработку:</h3>
+                <ul class="list">
+                  <li>Веб-сайтов любой сложности</li>
+                  <li>Мобильных приложений для iOS и Android</li>
+                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+              </div>
+            </section>
+            <section class="column-right">
+              <div class="logo-block">
+                <img src="img/nerds-illustration.jpg" alt="Логотип" width="360" height="208">
+              </div>
+              <h3>С 2004 года любим точность во всём:</h3>
+              <div class="rate-num">
+                <ul>
+                  <li><b>146<sup><small>%</small></sup></b><span><br>Уровень самоотдачи</span></li>
+                  <li><b>100<sup><small>%</small></sup></b><span><br>Соблюдение сроков</span></li>
+                  <li><b>50<sup><small>%</small></sup></b><span><br>Минимальная предоплата</span></li>
+                </ul>
+              </div>
+            </section>
+        </div>
+				<!-- Логотипы партнеров-->
+         <div class="partners-block">
+          <a class="partner" href="#"><img src="img/logo-1.png" alt="htmlAcademy" width="199" height="68"></a>
+          <a class="partner" href="#"><img src="img/logo-2.png" alt="Borodinsky" width="209" height="90"></a>
+          <a class="partner" href="#"><img src="img/logo-3.png" alt="Pink" width="185" height="52"></a>
+          <a class="partner" href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a>
+        </div>
+      </div>
 		</main>
 						<!--Карта         НА МАКЕТЕ ВО ВСЮ ДЛИННУ ???          КАК РАСТЯНУТЬ КАРТУ ???      -->
     <div class="map">
       <div class="container clearfix">
         <div class="map-addr">
-          <p class="map-addr-title">NЁRDS DESIGN STUDIO</p>
-          <p class="map-addr-text">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p class="map-addr-text">тел. +7 (812) 275-75-75</p>
-          <a class="btn map-addr-btn" href="#">Напишите нам</a>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-pop-up" href="#">Напишите нам</a>
         </div>
       <div class="map-marker">
         <img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
       </div>
       </div>
     </div>
-					<!--Подвал  Социальные сети-->
+
+	 <!--Модальное окно-->
+    <div class="pop-up pop-up-opened">
+      <button class="pop-up-close btn" type="button"></button>
+      <form action="#" method="post">
+        <p>Напишите нам</p>
+        <div class="form-column">
+          <label class="no-transparent" for="name-id">Ваше имя:</label>
+          <input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста" required>
+        </div>
+        <div class="form-column">
+          <label for="email-id">Ваш e-mail:</label>
+          <input type="text" name="email" id="email-id" placeholder="Для отправки ответа" required>
+      </div>
+      <label for="text-letter-id">Текст письма:</label>
+      <textarea name="text-letter" id="text-letter-id" placeholder="В свободной форме"></textarea>
+      <button class="btn" type="submit" name="send">Отправить</button>
+      </form>
+    </div>
+
+              <!--Подвал  Социальные сети-->
     <footer class="main-footer">
       <div class="container clearfix">
-        <section class="footer-social">
-          <!--Изображение будет  фон в CSS url("img/vk-icon.png")-->
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <!--Изображение будет фон в CSS url("img/fb-icon.png")-->
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <!--Изображение будет фон в CSS url("img/insta-icon.png")-->
-          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-text">
-          <p>Давайте дружить, это выгодно!</p>
+        <div class="social-block">
+         <a class="social-btn social-btn-vk" href="#"></a>
+         <a class="social-btn social-btn-fb" href="#"></a>
+         <a class="social-btn social-btn-insta" href="#"></a>
+        </div>
+        <div class="promo-block">
+          <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
-       </section>
+        </div>
       </div>
-    </footer>
-			<!-- Какой-то скрипт
+    </footer>			<!-- Какой-то скрипт
 			<script src="scripts.js"> </script>-->
 	</body>
 </html>
