@@ -8,30 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-			<!-- Header основной, Логотип и Навигация основная корзина слайдер---->
-      <header class="main-header">
-       <div class="container clearfix">
-          <div class="logo">
-						<a class="logo-status" href="#"></a>
-						<!-- <a class="logo" href="#"></a> -->
-					</div>
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li class="basket"><i></i><a href="#">Корзина</a></li>
-          </ul>
-        </nav>
-        <h1 class="header-title">Магазин готовых шаблонов</h1>
+    <header class="main-header">
+      <div class="container clearfix">
+      <div class="logo">
+      <a class="logo-status" href="#"></a>
       </div>
-         <!-- <h1 class="header-title">Магазин готовых шаблонов</h1> -->
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+      <a class="basket" href="#">Корзина</a>
+      </div>
+      <h1 class="header-title">Магазин готовых шаблонов</h1>
+      </div>
     </header>
 
     <div class="container">
       <div class="shop-columns clearfix">
-        <!-- Сайдбар -->
         <div class="shop-column-left">
           <form action="#" method="get">
             <h2 class="filter-title">Стоимость:</h2>
@@ -43,7 +41,6 @@
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
               </div>
-              <!-- Фиксированный диапазон по ценам -->
               <div class="range-price">
                 <label class="min-price">от <input class="min-price" type="text" value="0"></label>
                 <label class="max-price">до <input class="max-price" type="text" value="15 000"></label>
@@ -52,12 +49,12 @@
             <div class="grid">
               <h2 class="filter-title">Сетка:</h2>
             </div>
-            <input type="radio" name="net" id="adaptive-id" checked>
-            <label for="adaptive-id">Адаптивная</label>
-            <input type="radio" name="net" id="fixed-id">
-            <label for="fixed-id">Фиксированная</label>
-            <input type="radio" name="net" id="rubber-id">
-            <label for="rubber-id">Резиновая</label>
+              <input type="radio" name="net" id="adaptive-id" checked>
+              <label for="adaptive-id">Адаптивная</label>
+              <input type="radio" name="net" id="fixed-id">
+              <label for="fixed-id">Фиксированная</label>
+              <input type="radio" name="net" id="rubber-id">
+              <label for="rubber-id">Резиновая</label>
             <div class="hang">
               <h2 class="filter-title">Особенности:</h2>
             </div>
@@ -75,7 +72,6 @@
           </form>
         </div>
         <div class="shop-column-right">
-          <!-- Строка сортировки -->
           <ul class="sort">
             <li>Сортировать:</li>
             <li><a href="#">По цене</a></li>
@@ -84,23 +80,22 @@
             <li><a class="dir dir-up" href="#"></a></li>
             <li><a class="dir dir-down" href="#"></a></li>
           </ul>
-          <!-- Слайды -->
           <div class="catalog">
             <article class="catalog-item">
-                <div class="item-controls">
-                  <button type="button"></button>
-                  <button type="button"></button>
-                  <button type="button"></button>
-                </div>
-              <div class="item-image"></div>        <!--  ПРОБЫВАЛ ОБЕРНУТЬ ЧТОБЫ  ТОЛЬКО КАРТИНКУ ОБВЕСТИ НЕ ПОЛУЧАЕТСЯ -->
+              <div class="item-controls">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+              <div class="item-image"></div>
               <div class="catalog-notice">
-                <h2>SEDONA</h2>
-                <p>Информационный сайт<br> для туристов</p>
-                <button class="item-price btn" type="button">9 900 руб.</button>
+              <h2>SEDONA</h2>
+              <p>Информационный сайт<br> для туристов</p>
+              <button class="item-price btn" type="button">9 900 руб.</button>
               </div>
             </article>
             <article class="catalog-item">
-             <div class="item-controls">
+              <div class="item-controls">
                 <button type="button"></button>
                 <button type="button"></button>
                 <button type="button"></button>
@@ -112,7 +107,7 @@
               </div>
             </article>
             <article class="catalog-item">
-             <div class="item-controls">
+              <div class="item-controls">
                 <button type="button"></button>
                 <button type="button"></button>
                 <button type="button"></button>
@@ -159,7 +154,6 @@
                 <button class="item-price btn" type="button">9 900 руб.</button>
               </div>
             </article>
-           <!-- Выбор вариантов -->
             <ul class="paginator">
               <li class="active"><a href="">1</a></li>
               <li><a href="#">2</a></li>
@@ -167,28 +161,29 @@
               <li><a class="next" href="#">Следующая</a></li>
             </ul>
           </div>
-          </div>
-       </div>
-     </div>
-
-    <div class="map">
-      <div class="container clearfix">
-        <section class="map-addr">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn btn-pop-up" href="#">Напишите нам</a>
-        </section>
+        </div>
       </div>
     </div>
 
-     <!--Подвал  Социальные сети-->
+    <div class="map">
+      <button class="pop-up-close" type="button"></button>
+      <div id="yandex-map"></div>
+      <div class="container clearfix">
+      <section class="map-addr">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-pop-up" href="#">Напишите нам</a>
+      </section>
+      </div>
+    </div>
+
     <footer class="main-footer">
       <div class="container clearfix">
         <div class="social-block">
-         <a class="social-btn social-btn-vk" href="#"></a>
-         <a class="social-btn social-btn-fb" href="#"></a>
-         <a class="social-btn social-btn-insta" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-insta" href="#"></a>
         </div>
         <div class="promo-block">
           <h2>Давайте дружить, это выгодно!</h2>
