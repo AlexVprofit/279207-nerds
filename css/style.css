@@ -232,7 +232,7 @@ body {
 #btn-1:checked ~ .slider-paginator label[for="btn-1"],
 #btn-2:checked ~ .slider-paginator label[for="btn-2"],
 #btn-3:checked ~ .slider-paginator label[for="btn-3"] {
-  box-shadow: inset 0 0 0px 4px #c1c1c1;
+  box-shadow: inset 0 0 0px 2px #c1c1c1;
 }
 
 .slides  h1,
@@ -538,8 +538,9 @@ p {
 
 .map {
   position: relative;
-  min-width: 1440px;
-  min-height: 416px;
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
   margin-bottom: 72px;
   background: url("../img/map.jpg") center no-repeat;
 }
@@ -555,14 +556,14 @@ p {
   top: 49px;
   box-sizing: border-box;
   width: 320px;
-  padding-top: 51px;
+  padding-top: 52px;
   padding-left: 50px;
   padding-bottom: 47px;
   background: #ffffff;
 }
 
 .map-addr h3 {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -579,7 +580,26 @@ p {
 .map-addr .btn {
   box-sizing: border-box;
   margin-top: 20px;
-  padding: 17px 44px;
+  padding: 16px 44px;
+}
+
+@keyframes modal-open {
+  0%   { transform: translateY(-2000px); }
+  70%   { transform: translateY(30px);    }
+  90%   { transform: translateY(-10px)    }
+  100%  { transform: translateY(0);       }
+}
+
+@keyframes shake {
+  0%, 100% {
+  transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+  transform: translateX(10px);
+  }
 }
 
 .pop-up .pop-up-close {
@@ -607,10 +627,6 @@ p {
   background: rgba(251, 86, 90, 0.3);
 }
 
-.pop-up .pop-up-close::before {
-  transform: rotate(45deg);
-}
-
 .pop-up .pop-up-close::after {
   transform: rotate(-45deg);
 }
@@ -627,13 +643,28 @@ p {
   background: rgba(254, 204, 205, 0.1);
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/* .input-error {
+  border 2px solid #e74246;
+  animation: login-error 0.6s;
+}
+*/
+.pop-up  input:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
 .pop-up {
-  position: absolute;
-  top: 1740px;
+  display: none;
+  position: fixed;
+  top: 0%;
   left: 50%;
   z-index: 30;
   margin-left: -480px;
-  width: 760px;
+  max-width: 760px;
   padding: 0 100px;
   padding-top: 70px;
   padding-bottom: 85px;
@@ -645,7 +676,8 @@ p {
 }
 
 .pop-up-opened {
-  display: none;
+  display: block;
+  animation: modal-open 0.4s;
 }
 
 .pop-up h2 {
@@ -797,7 +829,7 @@ p {
 .main-footer .promo-block{
   float: right;
   max-width: 560px;
-  margin-right: 221px;
+  margin-right: 219px;
 }
 
 .promo-block h2 {
@@ -1128,7 +1160,7 @@ h1.header-title {
 }
 
 .sort li:nth-child(5) {
-  margin-right: 19px;
+  margin-right: 18px;
 }
 
 .sort a {
