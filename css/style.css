@@ -388,7 +388,7 @@ body {
 }
 
 .column-left h2 {
-  margin-top: -4px;
+  margin-top: -5px;
   margin-left: 1px;
   margin-bottom: 32px;
   font-size: 45px;
@@ -451,7 +451,7 @@ body {
 }
 
 .column-right .logo-block {
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   font-weight: 700;
 }
 
@@ -488,8 +488,9 @@ body {
 }
 
 b sup {
-  left: -3px;
-  top: -13px;
+  font-size: 63%;
+  left: -1px;
+  top: -15px;
 }
 
 .rate-num  span {
@@ -553,7 +554,7 @@ p {
 
 .map .map-addr {
   position: absolute;
-  top: 54px;
+  top: 55px;
   box-sizing: border-box;
   max-width: 320px;
   max-height: 308px;
@@ -580,7 +581,7 @@ p {
 .map-addr .btn {
   box-sizing: border-box;
   width: 219px;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 @-webkit-keyframes modal-open {
@@ -1146,7 +1147,7 @@ h1.header-title {
 .shop-columns .shop-column-right {
   float: left;
   max-width: 760px;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
 }
 
 .shop-column-right .sort {
@@ -1177,7 +1178,7 @@ h1.header-title {
 }
 
 .sort li:nth-child(1) {
-  margin-right: 263px;
+  margin-right: 265px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -1234,18 +1235,18 @@ h1.header-title {
 
 .catalog {
   width: 760px;
-  margin-bottom: 60px;
+  margin-bottom: 63px;
   font-size: 0;
 }
 
-.catalog .catalog-item {
+.catalog-item {
   position: relative;
   display: inline-block;
   vertical-align: top;
   width: 360px;
-  min-height: 615px;
+  height: 616px;
   margin-right: 38px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   background-color: rgba(77, 77, 77, 1.0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1253,34 +1254,19 @@ h1.header-title {
   font-size: 0;
 }
 
+.catalog-item .item-image {
+  height: 576px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: -1px;
+  border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
 .catalog-item .item-controls {
   position: absolute;
   top: 8px;
   left: 16px;
-}
-
-.catalog  .catalog-item:nth-child(1) {
-  background: #e9e9e9 url("../img/img-sedona.jpg") no-repeat 100% 40px;
-}
-
-.catalog .catalog-item:nth-child(2) {
-  background: #e9e9e9 url("../img/img-pink.jpg") no-repeat 100% 40px;
-}
-
-.catalog .catalog-item:nth-child(3) {
-  background: #e9e9e9 url("../img/img-barbershop.jpg") no-repeat 100% 40px;
-}
-
-.catalog .catalog-item:nth-child(4) {
-  background: #e9e9e9 url("../img/img-mishka.jpg") no-repeat 100% 40px;
-}
-
-.catalog .catalog-item:nth-child(5) {
-  background: #e9e9e9 url("../img/img-aplus.jpg") no-repeat 100% 40px;
-}
-
-.catalog .catalog-item:nth-child(6) {
-  background: #e9e9e9 url("../img/img-kvast.jpg") no-repeat 100% 40px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1316,7 +1302,7 @@ h1.header-title {
 }
 
 .catalog-notice h2 {
-  margin-top: 27px;
+  margin-top: 26px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1330,7 +1316,7 @@ h1.header-title {
 }
 
 .catalog-notice p {
-  max-height: 38px;
+  max-height: 36px;
   margin-bottom: 30px;
   padding-top: 15px;
   font-size: 16px;
@@ -1338,12 +1324,14 @@ h1.header-title {
   font-weight: 400;
   color: #666666;
   text-align: center;
+  overflow: hidden;
 }
 
 .catalog-notice .item-price {
   display: table;
-  width: 160px;
-  min-height: 50px;
+  box-sizing: border-box;
+  width: 200px;
+  max-height: 50px;
   margin: 0 auto;
   margin-bottom: 43px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -1365,7 +1353,7 @@ h1.header-title {
 
 .shop-column-right .paginator {
   font-size: 0;
-  margin-top: 21px;
+  margin-top: 23px;
 }
 
 .shop-column-right  ul .paginator {
@@ -1400,7 +1388,9 @@ h1.header-title {
 }
 
 .paginator .next {
+  box-sizing: border-box;
   width: 260px;
+  max-height: 50px;
   padding: 18px 0;
 }
 
@@ -1412,11 +1402,11 @@ h1.header-title {
   border-radius: 3px;
 }
 
-.paginator li:not(.active) a:hover {
+.noactive a:hover {
   background-color: #dfdfdf;
 }
 
-.paginator li:not(.active) a:active {
+.noactive a:active {
   background-color: rgba(213, 213, 213, 1.0);
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
